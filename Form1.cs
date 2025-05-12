@@ -64,6 +64,18 @@ namespace StockTrack_1
 
             SQLiteCommand command = new SQLiteCommand(createTableQuery, connection);
             command.ExecuteNonQuery();
+
+            string createUsersTable = @"
+    CREATE TABLE IF NOT EXISTS Users (
+        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+        Username TEXT NOT NULL UNIQUE,
+        Password TEXT NOT NULL
+    );";
+
+            SQLiteCommand userCmd = new SQLiteCommand(createUsersTable, connection);
+            userCmd.ExecuteNonQuery();
+
+
         }
 
 
@@ -357,6 +369,26 @@ namespace StockTrack_1
                 MessageBox.Show("Veritabanı geri yüklendi.");
                 LoadProducts(); // Yeniden listele
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (LoginForm.LoggedInUser != "admin")
+            {
+                btnManageUsers.Visible = false;
+            }
+        }
+
+        private void btnManageUsers_Click(object sender, EventArgs e)
+        {
+            if (LoginForm.LoggedInUser != "admin")
+            {
+                MessageBox.Show("Bu sayfaya yalnızca admin erişebilir.");
+                return;
+            }
+
+            UserManagementForm userForm = new UserManagementForm();
+            userForm.ShowDialog(); // ✅ Artık sadece adminler için çağrılır
         }
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -51,6 +51,7 @@
             this.btnExport = new System.Windows.Forms.Button();
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
+            this.btnManageUsers = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numProductStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCategories)).BeginInit();
@@ -222,16 +223,16 @@
             // 
             // chartCategories
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartCategories.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartCategories.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chartCategories.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartCategories.Legends.Add(legend2);
             this.chartCategories.Location = new System.Drawing.Point(831, 143);
             this.chartCategories.Name = "chartCategories";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartCategories.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartCategories.Series.Add(series2);
             this.chartCategories.Size = new System.Drawing.Size(300, 200);
             this.chartCategories.TabIndex = 16;
             this.chartCategories.Text = "chart1";
@@ -266,11 +267,23 @@
             this.btnRestore.UseVisualStyleBackColor = true;
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
+            // btnManageUsers
+            // 
+            this.btnManageUsers.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnManageUsers.Location = new System.Drawing.Point(650, 9);
+            this.btnManageUsers.Name = "btnManageUsers";
+            this.btnManageUsers.Size = new System.Drawing.Size(103, 54);
+            this.btnManageUsers.TabIndex = 20;
+            this.btnManageUsers.Text = "Kullanıcıları Yönet";
+            this.btnManageUsers.UseVisualStyleBackColor = false;
+            this.btnManageUsers.Click += new System.EventHandler(this.btnManageUsers_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 450);
+            this.Controls.Add(this.btnManageUsers);
             this.Controls.Add(this.btnRestore);
             this.Controls.Add(this.btnBackup);
             this.Controls.Add(this.btnExport);
@@ -323,6 +336,7 @@
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnBackup;
         private System.Windows.Forms.Button btnRestore;
+        private System.Windows.Forms.Button btnManageUsers;
     }
 }
 

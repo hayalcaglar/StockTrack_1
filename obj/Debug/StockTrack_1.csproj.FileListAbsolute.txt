@@ -38,3 +38,4 @@ C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\bin\Debug\System.Data.SQLit
 C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\bin\Debug\EntityFramework.xml
 C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\bin\Debug\System.Data.SQLite.xml
+C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\obj\Debug\StockTrack_1.UserManagementForm.resources
