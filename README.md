@@ -87,7 +87,7 @@ StockTrack is a modern and secure desktop application built with C# and WinForms
 
 ## 👤 Author
 
-Developed by [Your Name]  
+Developed by [Hayal Çağlar]  
 For portfolio, educational and professional presentation purposes.
 
 ---
