@@ -1,0 +1,4 @@
+C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\obj\Debug\StockTrack_1.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\obj\Debug\StockTrack_1.Form1.resources
+C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\obj\Debug\StockTrack_1.LoginForm.resources
+C:\Users\USER\source\repos\StockTrack_1\StockTrack_1\obj\Debug\StockTrack_1.csproj.GenerateResource.cache
