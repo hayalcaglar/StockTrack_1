@@ -64,16 +64,6 @@ StockTrack is a modern and secure desktop application built with C# and WinForms
 
 ---
 
-## 📸 Screenshots
-
-> *(You can insert screenshots here after pushing images to GitHub or using relative links)*
-
-- 🔒 Login Screen  
-- 📦 Product Management Dashboard  
-- 👤 User Management Panel  
-- 📊 Statistics Graph
-
----
 
 ## 💡 Possible Extensions
 
